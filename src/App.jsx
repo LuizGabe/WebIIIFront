@@ -1,8 +1,8 @@
 import style from "./App.module.css";
 import Person from "./data/person"
 
-import { CardPerson } from "./components/CardPerson/CardPerson";
-import { NumberBook } from "./components/NumbersBook/NumberBook"
+import { CardPerson } from "./components/templates/CardPerson/CardPerson";
+import { NumberBook } from "./components/templates/NumbersBook/NumberBook"
 
 export function App() {
 
@@ -16,7 +16,7 @@ export function App() {
           name={Person.name}
           office={Person.office}
           stacks={Person.stacks}
-        />
+        /> 
         <NumberBook/>
       </div>
     </>
