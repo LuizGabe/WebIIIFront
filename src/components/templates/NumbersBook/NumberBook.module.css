@@ -1,0 +1,65 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 24px;
+
+  width: 430px;
+  height: 168px;
+
+  background: #16151E;
+  border-radius: 8px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 16px;
+
+  width: 350px;
+  height: 24px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.iconsContainer>button {
+  border: none;
+  background-color: transparent;
+  margin: 7px;
+}
+
+.main {
+  background-color: #1A1924;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 48px 40px;
+
+  width: 430px;
+  height: 570px;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.main .uniqueContact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 283px;
+  align-items: center;
+}
