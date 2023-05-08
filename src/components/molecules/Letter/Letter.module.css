@@ -1,0 +1,13 @@
+.letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.letter>h1 {
+  text-transform: capitalize;
+  color: #E1E1E6
+}

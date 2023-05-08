@@ -1,0 +1,35 @@
+.singleContact {
+  width: 191px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.infoContact {
+  margin-left: 10px;
+}
+
+.infoContact>p {
+
+  font-family: 'Roboto';
+  font-style: bold;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+
+.infoContact>h6 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #8C8CBA;
+}
+
+.singleContact>img {
+  width: 48px;
+  height: 48px;
+  border-radius: 999999px;
+}
