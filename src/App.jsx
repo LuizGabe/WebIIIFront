@@ -6,31 +6,35 @@ import { NumberBook } from "./components/templates/NumbersBook/NumberBook"
 
 import { contatos, letras } from "../src/data/numberBookDados.js";
 import { useEffect, useState } from "react";
-import { getAllUsers } from "./services/Users";
+import { searchUser } from "./services/Users";
 import { getAllContacts } from "./services/Contacts";
 
 export function App() {
   const [contacts, setContacts] = useState([]);
-  const [users, setUsers] = useState([]);
+  const [user, setUser] = useState([]);
 
   useEffect( async () => {
     const contatos = await getAllContacts();
-    const users = await getAllUsers();
-    
+
+    //TODO: Colocar uma pequena tela de login, somente para selecionar o usuário
+    const user = (await searchUser('Luiz Gabriel'))[0]
+    console.log(user.stacks)
+
     setContacts(contatos);
-    setUsers(users);
+    setUser(user);
   }, [])
 
   return (
     <>
       
       <div className={style.container}>
+        {console.log(user)}
         <CardPerson
-          cover={Person.file.cover}
-          avatar={Person.file.avatar}
-          name={Person.name}
-          office={Person.office}
-          stacks={Person.stacks}
+          cover={user.coverImg}
+          avatar={user.avatarImg}
+          name={user.name}
+          office={user.office}
+          stacks={[]}
         /> 
         <NumberBook
           contatos={contacts}

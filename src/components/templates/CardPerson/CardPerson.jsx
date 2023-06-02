@@ -5,6 +5,7 @@ import { Stack } from "../../molecules/Stack/Stack";
 import style from "./CardPerson.module.css";
 
 export function CardPerson({ cover, avatar, name, office, stacks }) {
+  console.log(stacks)
   return (
     <div className={style.card}>
       <img src={cover} alt="Cover" />
@@ -12,7 +13,9 @@ export function CardPerson({ cover, avatar, name, office, stacks }) {
       <p className={style.p1}>{name}</p>
       <p className={style.p2}>{office}</p>
       <div className={style.stack}>
-        {stacks.map((stack) => {
+
+        {console.log(stacks)}{
+        stacks.map((stack) => {
           return <Stack key={stack} name={stack.Tec} color={stack.color} />;
         })}
       </div>
