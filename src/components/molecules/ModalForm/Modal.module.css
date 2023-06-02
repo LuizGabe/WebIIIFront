@@ -1,0 +1,63 @@
+.customPopup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #3b3857;
+  border-radius: 20px;
+}
+
+.customPopup input {
+  margin-bottom: 20px;
+}
+
+.customPopup button {
+  margin-top: 20px;
+}
+
+.customPopup {
+  font-size: 12px;  
+box-shadow: 2px 3px 7px 0px white;
+}
+.customPopup > .header {
+  width: 100%;
+  border-bottom: 1px solid rgb(46, 9, 111);
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.customPopup > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.customPopup > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.customPopup > .close {
+  
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: 10px;
+  top: -10px;
+  font-size: 30px;
+  background: transparent;
+  color: white;
+  border-radius: 18px;
+  border: transparent
+}
+
+.customPopup .actions {
+  display: flex;
+  justify-content: space-around;
+}
+.customPopup .actions button {
+  padding: 10px;
+  font: 10px;
+}
