@@ -3,8 +3,8 @@ import style from "./Stack.module.css"
 
 export function Stack({ name, color }) {
   return (
-    <span
+    <span 
       className={style.span} 
-      style={{ backgroundColor: color }}>#{name}</span>
+      style={{ backgroundColor: color, color: "#e1e1e6" }}>#{name}</span>
   )
 }

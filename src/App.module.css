@@ -6,3 +6,6 @@
 
   height: 100vh;
 }
+.container > div {
+  margin-right: 50px;
+}
