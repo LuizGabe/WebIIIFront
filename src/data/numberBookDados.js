@@ -1,34 +1,58 @@
 
 export const contatos = [
   {
+    id: 1,
     name: 'Brenda Mendes',
     number: '(21) 90876-8765',
     imgUrl: 'https://randomuser.me/api/portraits/men/14.jpg'
   },
   {
+    id: 2,
     name: 'Abraão Sena',
     number: '(11) 90876-1234',
     imgUrl: 'https://randomuser.me/api/portraits/men/7.jpg'
   },
   {
+    id: 3,
     name: 'Cleiton Souza',
     number: '(11) 90876-1209',
-    imgUrl: 'https://randomuser.me/api/portraits/men/44.jpg'
+    imgUrl: 'https://randomuser.me/api/portraits/men/44.jpg',
   },
   {
+    id: 4,
     name: 'Daniel Duarte',
     number: '(82) 90876-5534',
     imgUrl: 'https://randomuser.me/api/portraits/men/22.jpg'
   },
   {
+    id: 5,
     name: 'Beatriz Clasen',
     number: '(48) 90876-1123',
     imgUrl: 'https://randomuser.me/api/portraits/men/33.jpg'
   },
   {
+    id: 6,
     name: 'Caio Vinícius',
     number: '(71) 90876-2435',
     imgUrl: 'https://randomuser.me/api/portraits/men/27.jpg'
+  },
+  {
+    id: 7,
+    name: 'Cleiton Souza',
+    number: '(11) 90876-1209',
+    imgUrl: 'https://randomuser.me/api/portraits/men/44.jpg',
+  },
+  {
+    id: 8,
+    name: 'Daniel Duarte',
+    number: '(82) 90876-5534',
+    imgUrl: 'https://randomuser.me/api/portraits/men/22.jpg'
+  },
+  {
+    id: 9,
+    name: 'Beatriz Clasen',
+    number: '(48) 90876-1123',
+    imgUrl: 'https://randomuser.me/api/portraits/men/33.jpg'
   }
 ]
 
