@@ -41,12 +41,12 @@ const NumberBook = ({ contatos, letras, user }) => {
     setContacts(updatedContacts);
   };
 
-  const handleSearch = (value) => {
+  const handleSearch = async (value) => {
     if (value === "") {
-      setContacts(contatos);
+      setContacts(await getAllContacts());
       return;
     }
-    const filteredContacts = contatos.filter((contact) => {
+    const filteredContacts = contacts.filter((contact) => {
       return contact.name.toLowerCase().includes(value.toLowerCase());
     });
     setContacts(filteredContacts);

@@ -60,7 +60,7 @@ function ModalForm({
 
 
         <Modal.Footer style={{ justifyContent: 'end' }}>
-          <img style={{width: '50px', height: '50px', borderRadius: '50%' }} src={imgUrl} alt="imagem" />
+          <img style={{width: '50px', height: '50px', borderRadius: '50%' }} src={imgUrl || 'https://www.promoview.com.br/uploads/images/unnamed%2819%29.png'} alt="imagem" />
           <Button variant="dark" onClick={() => handleRandom()}>
             Preenchimento Aleatório
           </Button>
